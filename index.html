@@ -10,9 +10,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
 <!-- Brand icon as favicon -->
-<link rel="icon" type="image/svg+xml" href="yourcues_brand_icon.svg">
-<link rel="shortcut icon" href="yourcues_brand_icon.svg">
-<link rel="apple-touch-icon" href="yourcues_brand_icon.svg">
+<link rel="icon" type="image/jpeg" href="brandicon-white.jpeg">
+<link rel="shortcut icon" href="brandicon-white.jpeg">
+<link rel="apple-touch-icon" href="brandicon-white.jpeg">
 
 <style>
 • {
@@ -53,12 +53,12 @@ gap: 12px;
 .logo-icon {
 width: 48px;
 height: 48px;
-background: linear-gradient(135deg, #2D3A8C, #7C3AED);
-border-radius: 28px;
+background: transparent;
+border-radius: 0;
 display: flex;
 align-items: center;
 justify-content: center;
-box-shadow: 0 10px 15px -5px rgba(124, 58, 237, 0.25);
+box-shadow: none;
 }
 
 .logo-icon span {
@@ -72,8 +72,10 @@ letter-spacing: -0.5px;
  width: 100%;
  height: 100%;
  object-fit: contain;
- border-radius: 28px;
+ border-radius: 0;
  display: block;
+ filter: none;
+ mix-blend-mode: multiply;
 }
 
 .logo-text {
@@ -141,12 +143,13 @@ transform: translateY(-2px);
 display: flex;
 flex-wrap: wrap;
 align-items: center;
-gap: 48px;
-padding: 20px 0 50px;
+column-gap: 36px;
+row-gap: 48px;
+padding: 16px 0 44px;
 }
 
 .hero-text {
-flex: 1;
+flex: 1 1 460px;
 }
 
 .hero h1 {
@@ -168,13 +171,13 @@ max-width: 90%;
 }
 
 .visual {
-flex: 1;
+flex: 0 1 340px;
 display: flex;
 justify-content: center;
 }
 
 .circle {
-width: 2e40px;
+width: 240px;
 height: 240px;
 border-radius: 50%;
 background: linear-gradient(135deg, #2D3A8C, #7C3AED);
@@ -428,7 +431,7 @@ padding: 18px;
 <div class="navbar">
 <div class="brand-wrapper">
 <div class="logo-icon">
-<img src="yourcues_brand_icon.svg" alt="YourCues brand icon" />
+<img src="brandicon-white.jpeg" alt="YourCues brand icon" />
 </div>
 <div class="logo-text">
 <div class="main-logo">
