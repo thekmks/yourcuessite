@@ -29,9 +29,9 @@ scroll-behavior: smooth;
 }
 
 .container {
-max-width: 1200px;
+max-width: 1320px;
 margin: 0 auto;
-padding: 0 24px;
+padding: 0 clamp(18px, 4vw, 56px);
 }
 
 /* Navbar */
@@ -176,43 +176,12 @@ display: flex;
 justify-content: center;
 }
 
-.circle {
+.hero-brand-icon {
 width: 240px;
 height: 240px;
-border-radius: 50%;
-background: linear-gradient(135deg, #2D3A8C, #7C3AED);
-display: flex;
-align-items: center;
-justify-content: center;
-box-shadow: 0 20px 35px -12px rgba(0,0,0,0.2);
-}
-
-.inner {
-width: 100px;
-height: 100px;
-background: white;
-border-radius: 50%;
-position: relative;
-}
-
-.dot {
-width: 14px;
-height: 14px;
-background: #2D3A8C;
-border-radius: 50%;
-position: absolute;
-top: 38px;
-left: 28px;
-}
-
-.spark {
-width: 16px;
-height: 16px;
-background: #7C3AED;
-transform: rotate(45deg);
-position: absolute;
-top: 38px;
-right: 28px;
+object-fit: contain;
+display: block;
+mix-blend-mode: multiply;
 }
 
 /* Section title */
@@ -457,12 +426,7 @@ Just the signals you need to move forward. Explore our ecosystem — powerful ap
 <a href="#apps-section" class="btn" style="background: #2D3A8C;"><i class="fas fa-th-large"></i> Browse all apps</a>
 </div>
 <div class="visual">
-<div class="circle">
-<div class="inner">
-<div class="dot"></div>
-<div class="spark"></div>
-</div>
-</div>
+<img class="hero-brand-icon" src="brandicon-white.jpeg" alt="YourCues brand icon" />
 </div>
 </div>
 </div>
